@@ -1,8 +1,10 @@
 
 /* =================  Global ======================= */
 :root{
-    --dark-blue:#363f5f;
-    --total:green;
+    --dark-blue: #363f5f;
+    --green: #49AA26;
+    --light-green: #3dd705;
+    --red: #e92929;
 }
 
 * {
@@ -38,17 +40,45 @@ body {
 }
 /* =================  Links & Buttons ======================= */
 a {
-    color: #49aa26;
+    color: var(--total);
     text-decoration: none;
 }
 
-.button:hover {
-    color:#3dd705;
+a:hover {
+    color: var(--light-green);
 }
 
+button {
+    width: 50%;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background-color: var(--green);
+    padding: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--light-green);
+}
 .button.new{
     display: inline-block;
     margin-bottom: .8rem;
+}
+.button.cancel {
+    color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.button.cancel:hover {
+    opacity: 1;
 }
 
 /* =================  Title ======================= */
@@ -62,7 +92,7 @@ h2 {
 /* =================  Header ======================= */
 header {
     background: #2D4A22;
-    padding: 2rem 0 10rem;
+    padding: 3rem 0 12rem;
     text-align: center;
 
 }
@@ -112,10 +142,9 @@ header {
 }
 
 .card.total {
-    background-color: var(--total);
+    background-color: var(--green);
     color: #fff;
-    opacity: 0.7;
-
+    border: none;
 }
 
 /* =================  Transaction ======================= */
@@ -198,7 +227,7 @@ td.date{
     justify-content: center;
     opacity: 0;
     visibility: hidden;
-
+    z-index: 999;
 }
 
 .modal-overlay.active{
@@ -208,10 +237,45 @@ td.date{
 
 .modal{
     background: #f0f2f5;
-    display: flex;
     padding: 2.4rem;
+    position: relative;
+    z-index: 1;
+}
+/* =================  Form ======================= */
+ #form {
+    max-width: 500px;
+ }
+
+#form h2 {
+     margin-top: 0px;
+     text-align: center;
+ }
+ 
+ input {
+     border: none;
+     border-radius: 0.2rem;
     
-    
+     padding: 0.8rem;
+     width: 100%;
+    }
+
+.input-group{
+    margin-top: 1rem;
+}
+
+.input-group small{
+    opacity: 0.4;
+}
+
+.input-group.actions{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions .button {
+    width: 48%;
 }
 
 /* =================  Footer ======================= */
