@@ -101,6 +101,7 @@ header {
     color: #fff;
     font-weight: 100;
     display: inline-flex;
+   
 }
 
 /* =================  Balance ======================= */
@@ -124,6 +125,7 @@ header {
     padding: 1.5rem 2rem;
     margin-bottom: 2rem;
     color: var(--dark-blue) ;
+
 }
 
 .card h3 {
