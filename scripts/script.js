@@ -208,6 +208,7 @@ const Form = {
             Modal.close()
         }   
             catch (error) {
+                console.log('error', error)
             alert(error.message)
         }
     }

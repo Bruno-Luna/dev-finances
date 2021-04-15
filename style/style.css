@@ -1,4 +1,3 @@
-
 /* =================  Global ======================= */
 :root{
     --dark-blue: #363f5f;
@@ -57,10 +56,12 @@ button {
     padding: 0;
     border-radius: 0.25rem;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
     background: var(--light-green);
+   
 }
 .button.new{
     display: inline-block;
@@ -73,6 +74,7 @@ button:hover {
     height: 50px;
     display: flex;
     align-items: center;
+    font-size: 16px;
     justify-content: center;
     opacity: 0.6;
 }
@@ -101,7 +103,6 @@ header {
     color: #fff;
     font-weight: 100;
     display: inline-flex;
-   
 }
 
 /* =================  Balance ======================= */
@@ -131,7 +132,6 @@ header {
 .card h3 {
     font-weight: normal;
     font-size: 1rem;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -220,7 +220,6 @@ td.date{
 .modal-overlay{
     width: 100%;
     height: 100%;
-
     background-color: rgba(0,0,0,0.6);
     position: fixed;
     top: 0;
@@ -256,9 +255,9 @@ td.date{
  input {
      border: none;
      border-radius: 0.2rem;
-    
      padding: 0.8rem;
      width: 100%;
+     border: var(--dark-blue) 1px solid;
     }
 
 .input-group{
@@ -284,6 +283,7 @@ td.date{
 
 footer {
     text-align: center;
+    margin-top: 2.5rem;
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
     opacity: 0.6;
