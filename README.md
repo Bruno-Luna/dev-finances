@@ -46,4 +46,11 @@ Projeto desenvolvido com o auxilio de [*Mayk Brito*](https://github.com/maykbrit
 
 ## Layout:
 
-### 
+#### Desktop:
+
+![](https://github.com/Bruno-Luna/dev-finances/blob/master/layout/desktop.gif)
+
+#### Mobile: 
+
+![](https://github.com/Bruno-Luna/dev-finances/blob/master/layout/mobile.gif)
+
